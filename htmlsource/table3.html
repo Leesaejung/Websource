@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 표 태그 
+        <table>, <tr>, 컬럼 : <td>, <th> => 가운데정렬, 굵게
+
+        셀 병합
+        1) 행 병합 : colspan
+        2) 열 병합 : rowspan
+
+        caption : 테이블 제목(중앙 정렬이 기본)
+      -->
+
+    <table border="1">
+      <caption>
+        <strong>테이블</strong>
+      </caption>
+      <tr>
+        <th>이름</th>
+        <td>&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+      </tr>
+    </table>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic
+    earum cumque officia omnis natus laborum sapiente, vitae animi
+    necessitatibus recusandae cum fugit quas, eius facere! Illo deserunt facere
+    aspernatur.
+  </body>
+</html>
