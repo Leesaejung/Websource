@@ -20,6 +20,7 @@
         2) 열 병합 : rowspan
 
         caption : 테이블 제목(중앙 정렬이 기본)
+        figcaption : 제목으로 쓸 수 있어도 정렬은 안됨
       -->
 
     <table border="1">
@@ -42,9 +43,45 @@
       </tr>
     </table>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic
-    earum cumque officia omnis natus laborum sapiente, vitae animi
-    necessitatibus recusandae cum fugit quas, eius facere! Illo deserunt facere
-    aspernatur.
+    <table border="1">
+      <figcaption>
+        <!-- 정렬은 안됨 -->
+        <strong>테이블</strong>
+      </figcaption>
+      <tr>
+        <th>이름</th>
+        <td>&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+      </tr>
+    </table>
+
+    <figcaption>
+      <strong>테이블</strong>
+    </figcaption>
+    <table border="1">
+      <tr>
+        <th>이름</th>
+        <td>&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+      </tr>
+    </table>
   </body>
 </html>
