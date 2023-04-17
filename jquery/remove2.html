@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .header {
+        color: red;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
+    <h1 id="header" class="header">Header 1</h1>
+    <h2 id="header2" class="header">Header 2</h2>
     <div id="top">
       <div id="nested">내용</div>
       <p>
@@ -21,18 +26,22 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-      const h1 = document.querySelector("h1");
-      h1.remove();
+      // css() : 스타일 줄 때
+      // attr() : 속성 줄 때
 
-      //   const nested = document.getElementById("nested");
-      //   nested.remove();
+      const h1 = $("h1");
 
-      //부모
-      const div = document.querySelector("#top");
+      // 속성 추가
+      h1.attr("name", "title");
 
-      //제거대상 자식
-      const nested = document.getElementById("nested");
-      div.removeChild(nested);
+      // setAttribute(), removeAttribute() == attr(). removeAttr()
+      h1.removeAttr("class"); //제거할 속성명
+
+      //h2 id 속성 제거
+      const h2 = $("h2");
+      h2.removeAttr("id");
+
+      h2.html("");
     </script>
   </body>
 </html>
